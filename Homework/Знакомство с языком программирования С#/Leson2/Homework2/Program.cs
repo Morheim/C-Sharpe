@@ -8,7 +8,7 @@ namespace Homework2
         {
             //TASK1/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             {
-                DZ(1, true);
+                Task(1, true);
                 Console.WriteLine("Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа." +
                     "\n\t456 -> 5" +
                     "\n\t782 -> 8" +
@@ -21,7 +21,7 @@ namespace Homework2
                     return;
                 }
 
-                Console.WriteLine($"Entered number = {Number}");
+                Console.WriteLine($"Enter a number = {Number}");
                 int SecondDigit = Number / 10 % 10;
                 Console.WriteLine($"The second digit = {SecondDigit}");
 
@@ -29,7 +29,7 @@ namespace Homework2
 
             //TASK2/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             {
-                DZ(2);
+                Task(2);
                 Console.WriteLine("Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет." +
                     "\n\t645 -> 5" +
                     "\n\t78 -> третьей цифры нет" +
@@ -41,10 +41,10 @@ namespace Homework2
                     Console.WriteLine(ReductionToThreeDigits(Number));
                 }
             }
-
+            
             //TASK3/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             {
-                DZ(3);
+                Task(3);
                 Console.WriteLine("Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным." +
                     "\n\t6 -> да" +
                     "\n\t7 -> да" +
@@ -63,7 +63,7 @@ namespace Homework2
                     }
                 }
             }
-
+            
             /*______________________________________________________________________________________________________________________________________*/
             int PrintNum(string Messadge)
             {
@@ -92,9 +92,9 @@ namespace Homework2
                 return true;
             }
 
-            bool IsWeekend(int Weekday)
+            bool IsWeekend(int Number)
             {
-                if (Weekday > 5)
+                if (Number > 5)
                 {
                     return true;
                 }
@@ -112,14 +112,14 @@ namespace Homework2
                 return false;
             }
             /*______________________________________________________________________________________________________________________________________*/
-            void DZ(int num, bool TheFirstNumber = false)
+            void Task(int TaskNum, bool IsFirstTask = false)
             {
-                if (!TheFirstNumber)
+                if (!IsFirstTask)
                 {
                     Console.Write("\n\n\npress Enter to proceed to the next task\n\n");
                     Console.ReadKey();
                 }
-                Console.Write($"\n+++++++++++++++++++DZ{num}+++++++++++++++++++\n\n\n");
+                Console.Write($"\n+++++++++++++++++++ Task {TaskNum} +++++++++++++++++++\n\n\n");
             }
         }
     }
