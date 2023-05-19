@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Homework3
 {
@@ -76,7 +72,6 @@ namespace Homework3
                 {
                     Console.WriteLine(MyPow(i, 3));
                 }
-                
             }
             
             /*Metods_________________________________________________________________________________________________________________________________*/
@@ -93,9 +88,9 @@ namespace Homework3
                 Console.WriteLine($"Enter a number = {Number}");
                 int NumberOne = Number / 10000;
                 int NumberTwo = Number / 1000 % 10;
-                int NumberFor = Number / 10 % 10;
+                int NumberFour = Number / 10 % 10;
                 int NumberFive = Number % 10;
-                if (NumberOne == NumberFive && NumberTwo == NumberFor)
+                if (NumberOne == NumberFive && NumberTwo == NumberFour)
                 {
                     Console.WriteLine($"\nYour number {Number} is a palindrome.");
                 }
@@ -157,7 +152,6 @@ namespace Homework3
                                  Math.Pow((y2 - y1), 2) +
                                  Math.Pow((z2 - z1), 2));*/
             }
-
 
             /*_______________________________________________________________________________________________________________________________________*/
             void Task(int TaskNum, bool IsFirstTask = false)
