@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Introduction to the %28C-Sharpe%29 programming language\Homework\Homework 10\Homework 10\Homework 10.csproj">
+      <Project>{3459e735-138d-414b-af0f-f8f298574252}</Project>
+      <Name>Homework 10</Name>
+    </ProjectReference>
     <ProjectReference Include="Introduction to the %28C-Sharpe%29 programming language\Homework\Homework 1\Homework 1.csproj">
       <Project>{c5c1019f-1ce4-4c67-b2ff-e305efcac679}</Project>
       <Name>Homework 1</Name>

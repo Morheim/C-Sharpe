@@ -9,6 +9,7 @@ using Homework_6;
 using Homework_7;
 using Homework_8;
 using Homework_9;
+using Homework_10;
 
 namespace Homework
 {
@@ -16,7 +17,7 @@ namespace Homework
     {
         static void Main(string[] args)
         {
-            string Mesadge = "\n Enter the homework number you want to run (1-9) = ";
+            string Mesadge = "\n Enter the homework number you want to run (1-10) = ";
 
             HomeworhNumbers(Metod.InputNumInt(Mesadge));
 
@@ -67,6 +68,11 @@ namespace Homework
 
                     case 9:
                         HW9.Run();
+                        HomeworhNumbers(Metod.InputNumInt(Mesadge));
+                        break;
+
+                    case 10:
+                        HW10.Run();
                         HomeworhNumbers(Metod.InputNumInt(Mesadge));
                         break;
                     

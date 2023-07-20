@@ -294,7 +294,7 @@ namespace MyMetods
             }
         }
 
-        /*public static void CheckingNumberString(string Number)
+        public static void CheckingNumberString(string Number)
         {
 
             if (Number[0] == Number[4] || Number[1] == Number[3])
@@ -303,9 +303,9 @@ namespace MyMetods
             }
             else
             {
-                Console.WriteLine($"\nYour number {Number} is not a palindrome."); 
+                Console.WriteLine($"\nYour number {Number} is not a palindrome.");
             }
-        }*/
+        }
 
         public static int SetAxisCoordinate(string Axis, string PointName)
         {
@@ -340,7 +340,6 @@ namespace MyMetods
                                       double y1, double y2,
                                       double z1, double z2)
         {
-
             return MySqrt(MyPow(x2 - x1, 2) +
                           MyPow(y2 - y1, 2) +
                           MyPow(z2 - z1, 2));
