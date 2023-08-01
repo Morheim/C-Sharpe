@@ -87,6 +87,8 @@ namespace Homework_6
                     return LineData;
                 }
             }
+
+            Metod.End();
         }
     }
 }

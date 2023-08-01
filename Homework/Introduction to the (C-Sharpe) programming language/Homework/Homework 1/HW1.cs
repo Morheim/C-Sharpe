@@ -115,6 +115,8 @@ namespace Homework_1
                 }
                 Console.WriteLine();
             }
+
+            Metod.End();
         }
     }
 }

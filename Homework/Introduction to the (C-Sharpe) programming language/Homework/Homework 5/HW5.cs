@@ -94,6 +94,8 @@ namespace Homework_5
                 }
                 Console.WriteLine($"\tMaxNum = {MaxNum}\n\n\tMinNum = {MinNum}\n\n\tnumber difference {MaxNum - MinNum}\n\n");
             }
+
+            Metod.End();
         }
     }
 }

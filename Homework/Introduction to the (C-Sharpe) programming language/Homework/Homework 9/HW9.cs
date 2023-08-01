@@ -42,6 +42,8 @@ namespace Homework_9
 
                 Console.WriteLine($"A({m},{n}) = {Metod.Akkerman(m, n)}");
             }
+
+            Metod.End();
         }
     }
 }

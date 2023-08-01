@@ -17,68 +17,83 @@ namespace Homework
     {
         static void Main(string[] args)
         {
+            Console.Clear();
+
+            Console.WriteLine(" Список домашних заданий по темам урока \n\n"+
+                " 1) Знакомство с языком программирования С#\n" +
+                " 2) Базовые алгоритмы\n" +
+                " 3) Базовые алгоритмы. Продолжение\n" +
+                " 4) Функции\n" +
+                " 5) Функции и одномерные массивы\n" +
+                " 6) Одномерные массивы. Продолжение\n" +
+                " 7) Двумерные массивы\n" +
+                " 8) Двумерные массивы. Продолжение\n" +
+                " 9) Рекурсия\n" +
+                " 10) Итоговая контрольная работа по основному блоку \n");
+
             string Mesadge = "\n Enter the homework number you want to run (1-10) = ";
 
-            HomeworhNumbers(Metod.InputNumInt(Mesadge));
+            HomeworkNumbers(Metod.InputNumInt(Mesadge));
 
-            void HomeworhNumbers(int NumHomewrk)
+            void HomeworkNumbers(int NumHomewrk)
             {
                 Console.Clear();
                 switch (NumHomewrk)
                 {
                     case 1:
                         HW1.Run();
-                        HomeworhNumbers(Metod.InputNumInt(Mesadge));
+                        Main(args);
                         break;
 
                     case 2:
                         HW2.Run();
-                        HomeworhNumbers(Metod.InputNumInt(Mesadge));
+                        Main(args);
                         break;
 
                     case 3:
                         HW3.Run();
-                        HomeworhNumbers(Metod.InputNumInt(Mesadge));
+                        Main(args);
                         break;
 
                     case 4:
                         HW4.Run();
-                        HomeworhNumbers(Metod.InputNumInt(Mesadge));
+                        Main(args);
                         break;
 
                     case 5:
                         HW5.Run();
-                        HomeworhNumbers(Metod.InputNumInt(Mesadge));
+                        Main(args);
                         break;
 
                     case 6:
                         HW6.Run();
-                        HomeworhNumbers(Metod.InputNumInt(Mesadge));
+                        Main(args);
                         break;
 
                     case 7:
                         HW7.Run();
-                        HomeworhNumbers(Metod.InputNumInt(Mesadge));
+                        Main(args);
                         break;
 
                     case 8:
                         HW8.Run();
-                        HomeworhNumbers(Metod.InputNumInt(Mesadge));
+                        Main(args);
                         break;
 
                     case 9:
                         HW9.Run();
-                        HomeworhNumbers(Metod.InputNumInt(Mesadge));
+                        Main(args);
                         break;
 
                     case 10:
                         HW10.Run();
-                        HomeworhNumbers(Metod.InputNumInt(Mesadge));
+                        Main(args);
                         break;
                     
                     default:
                         Console.WriteLine("\n Invalid value entered, please try again\n");
-                        HomeworhNumbers(Metod.InputNumInt(Mesadge));
+                        Console.ReadKey();
+                        Main(args);
                         break;
                 }
             }

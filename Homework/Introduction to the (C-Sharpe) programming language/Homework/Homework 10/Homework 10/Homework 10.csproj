@@ -44,5 +44,11 @@
     <Compile Include="HW10.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\MyMetods\MyMetods.csproj">
+      <Project>{34e4f45d-7b79-486b-8d74-9e20356eacda}</Project>
+      <Name>MyMetods</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

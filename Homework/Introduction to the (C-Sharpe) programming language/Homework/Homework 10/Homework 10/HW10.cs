@@ -1,4 +1,6 @@
 ﻿using System;
+using MyMetods;
+
 
 namespace Homework_10
 {
@@ -6,32 +8,20 @@ namespace Homework_10
     {
         public static void Run()
         {
-            // Ввод начального массива
-            Console.WriteLine("Введите элементы начального массива через запятую:");
-            string input = Console.ReadLine();
-            string[] originalArray = input.Split(',');
+            Metod.Task(1, true);
+            Console.WriteLine(" Написать программу, которая из имеющегося массива строк формирует новый массив из строк,\n" +
+                " длина которых меньше, либо равна 3 символам. Первоначальный массив можно ввести с клавиатуры,\n" +
+                " либо задать на старте выполнения алгоритма.\n" +
+                " При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.\n" +
+                              "\n\tN = 5 -> 5, 4, 3, 2, 1" +
+                              "\n\tN = 8 -> 8, 7, 6, 5, 4, 3, 2, 1\n\n");
 
-            // Создание нового массива из строк, длина которых меньше, либо равна 3 символам
-            string[] newArray = new string[originalArray.Length];
-            int j = 0;
-            for (int i = 0; i < originalArray.Length; i++)
-            {
-                if (originalArray[i].Length <= 3)
-                {
-                    newArray[j] = originalArray[i];
-                    j++;
-                }
-            }
 
-            // Вывод результата
-            Console.WriteLine("Начальный массив: [" + string.Join(", ", originalArray) + "]");
-            Console.Write("Новый массив: [");
-            for (int i = 0; i < j; i++)
-            {
-                Console.Write(newArray[i]);
-                if (i < j - 1) Console.Write(", ");
-            }
-            Console.Write("]");
+            string[] OriginalArray = Metod.SetArrayStr();
+            Console.Clear();
+            Metod.GetStrArrayMaxChar(OriginalArray);
+
+            Metod.End();
         }
     }
 }

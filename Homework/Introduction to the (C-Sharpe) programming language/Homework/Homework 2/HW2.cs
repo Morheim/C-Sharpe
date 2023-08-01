@@ -64,6 +64,8 @@ namespace Homework_2
                     }
                 }
             }
+
+            Metod.End();
         }
     }
 }

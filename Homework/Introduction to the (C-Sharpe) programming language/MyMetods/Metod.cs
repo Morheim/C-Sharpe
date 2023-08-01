@@ -490,6 +490,39 @@ namespace MyMetods
             }
         }
 
+        public static string[] SetArrayStr(string Mesadge = "Enter the elements of the initial array separated by commas: ", char SplitChar = ',')
+        {
+            Console.WriteLine(Mesadge);
+            string input = Console.ReadLine();
+            string[] originalArray = input.Split(SplitChar);
+            return originalArray;
+        }
+
+        public static string[] GetStrArrayMaxChar(string[] originalArray)
+        {
+            string[] newArray = new string[originalArray.Length];
+            int j = 0;
+            for (int i = 0; i < originalArray.Length; i++)
+            {
+                if (originalArray[i].Length <= 3)
+                {
+                    newArray[j] = originalArray[i];
+                    j++;
+                }
+            }
+
+            Console.WriteLine("Initial array: [" + string.Join(", ", originalArray) + "]");
+            Console.Write("New array: [");
+            for (int i = 0; i < j; i++)
+            {
+                Console.Write(newArray[i]);
+                if (i < j - 1) Console.Write(", ");
+            }
+            Console.Write("]");
+
+            return newArray;
+        }
+
         /*______________________________________________________________________________________________________________________________________*/
         public static void Task(int TaskNum, bool IsFirstTask = false)
         {
@@ -500,6 +533,13 @@ namespace MyMetods
                 Console.Clear();
             }
             Console.Write($"\n+++++++++++++++++++ Task {TaskNum} +++++++++++++++++++\n\n\n");
+        }
+        public static void End()
+        {
+            Console.Write($"\n\n\n+++++++++++++++++++++++ END +++++++++++++++++++++++\n");
+             Console.Write($"To return to the start menu, press any key ");
+
+            Console.ReadKey();
         }
     }
 }

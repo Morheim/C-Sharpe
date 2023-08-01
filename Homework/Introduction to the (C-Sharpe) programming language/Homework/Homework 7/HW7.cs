@@ -71,6 +71,8 @@ namespace Homework_7
                 Console.Write("\nСреднее арифметическое каждого столбца: ");
                 Metod.ArrayDoublePrint(Metod.GetAverageByColumns(Array2DInt));
             }
+
+            Metod.End();
         }
     }
 }

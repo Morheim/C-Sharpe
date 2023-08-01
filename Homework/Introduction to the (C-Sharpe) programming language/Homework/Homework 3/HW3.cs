@@ -62,6 +62,8 @@ namespace Homework_3
                     Console.WriteLine(Metod.MyPow(i, 3));
                 }
             }
+
+            Metod.End();
         }
     }
 }

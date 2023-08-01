@@ -134,6 +134,8 @@ namespace Homework_8
                 Console.WriteLine("\nSpirally filled array\n");
                 Metod.Array2DIntPrint(Metod.SpirallyFilledArray(Array2DInt));
             }
+
+            Metod.End();
         }
     }
 }

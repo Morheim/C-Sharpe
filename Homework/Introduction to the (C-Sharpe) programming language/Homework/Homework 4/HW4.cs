@@ -45,6 +45,8 @@ namespace Homework_4
                                                      );
                 Metod.ArrayIntPrint(Array);
             }
+
+            Metod.End();
         }
     }
 }
